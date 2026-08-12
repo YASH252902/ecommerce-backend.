@@ -1,0 +1,10 @@
+package com.example.ecommerce_backend.repository;
+
+import com.example.ecommerce_backend.entity.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long> {
+    // Spring Data JPA magically handles all the saving, deleting, and searching for us!
+}
